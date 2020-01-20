@@ -1,0 +1,54 @@
+name: VoteKickOrBan
+main: bimo_power.votekickorban.Main
+version: "1.0.0"
+api: ["1.0.9"]
+load: POSTWORLD
+prefix: '§eVoteKickOrBan§f'
+author: BimoPower
+description: "Vote kick or ban a player"
+
+commands:
+  vote.help:
+    description: Show list commands
+    usage: "/vote help"
+    permission: vote.help
+
+  vote.stop:
+    description: Stops voting
+    usage: "/vote stop"
+    permission: vote.stop
+
+  vote:
+    description: Show GUI form send a vote
+    usage: "/vote"
+    permission: vote
+
+  vote.kick.fine:
+    description: Kick player by vote with a fine
+    usage: "/vote kickFine <player> <fine> <message more...>"
+    permission: vote.kick.fine
+
+  vote.kick:
+    description: Kick player by vote
+    usage: "/vote kick <player> <message more...>"
+    permission: vote.kick
+
+  vote.ban:
+    description: Ban player by vote
+    usage: "/vote ban <player> <message more...>"
+    permission: vote.ban
+
+
+permissions:
+  vote:
+    default: true
+  vote.stop:
+    default: true
+  vote.help:
+    default: true
+  vote.kick.fine:
+    default: true
+  vote.kick:
+    default: true
+  vote.ban:
+    default: true

@@ -1,0 +1,55 @@
+messages:
+  helps:
+    '0': '#a>>>>>> List Commands <<<<<<'
+    '1': /vote - to vote
+    '2': /vote kickFine <player> <fine> <message> - create vote, kick a player with a penalty
+    '4': /vote kick <player> <message> - create vote,  kick the player
+    '5': /vote ban <player> <message> - create vote, ban the player
+    '6': /vote stop - stop a vote
+  errors:
+    err1: Type the command /vote help
+    err2: You have already cast your vote!
+    err3: Missing Voting!
+    err4: Missing player!
+    err5: You cannot kick or ban yourself!
+    err6: You do not own current voting!
+    err7: Not enough arguments, enter the command /vote help !
+    err8: Player {playerKick} disconnected from server!
+    err9: You cannot vote through the console!
+    err10: The argument {argument} must be a number!
+    err11: The argument {argument} must be a word!
+    err12: Voting is not over yet!
+  info:
+    stopVote: '#lVoting has been suspended!'
+    complete: '#lVoting has been completed!'
+    sendVoteYes: '#lYou sent your vote (Confirmation)!'
+    sendVoteNo: '#lYou sent your vote (Rejection)!'
+    startKickOrBanVote: '#lVoting was created by player #b{playerSendKick} #f!%n{msg}%nReason: {reportMsg}'
+    backVote: '#lPlayer {playerKick} remained on the server by voting!'
+    countVotes: '#lVoted for the exile: {countYes}%nVoted for the pardon: {countNo}%nTotal votes: {countAll}'
+    backVoteEqual: '#lThe total votes were the same!'
+    kickVote: '#lPlayer {playerKick} was kicked from the server by voting!'
+    kickFineVote: '#lPlayer {playerKick} was expelled from the server and a fine {fineMoney}$ was imposed on voting!'
+    banReportMsgVote: '#lYou were banned by voting! %nReason: {reportMsg}'
+    banVote: '#lPlayer {playerKick} has been banned!'
+    kickReportMsgVote: 'You were kicked by the vote! %nReason: {reportMsg}'
+    kickFineReportMsgVote: 'You were kicked by the vote and fined {fineMoney}$!%nReason: {reportMsg}'
+    kickChatInfo: '#l#aPlayer {playerSendKick} wants to kick player {playerKick}'
+    kickChatInfoFine: '#l#aPlayer {playerSendKick} wants to kick player {playerKick} and wants to be fined {fineMoney}$'
+    banChatInfo: '#l#aPlayer {playerSendKick} wants to ban player {playerKick}'
+    formAlert:
+      title: Choose a voice!
+      content: 'Action: {infoSender}% n% n {infoFine}%n%nReason: {reportMsg}'
+      contentExtraFine: Will be fined {fineMoney}$
+      btnYes: Yes
+      btnNo: No
+    bossBar: '#lPlayer #e {playerSendKick} #fwants to kick player #c{playerKick}#f'
+    bossBarBan: '#lPlayer #e {playerSendKick} #f wants to ban player #c {playerKick}#f'
+    bossBarVotes: '#l#e| Total: {countAll} | Kick out: {countYes} | Leave {countNo} | Left: {countComplete} |'
+options:
+  maxTimeComplete: 100 # max second {countComplete}
+  sounds:
+    kick: random.hurt
+    noKick: random.levelup
+    equalVotes: random.totem
+    timerMim: random.toast
